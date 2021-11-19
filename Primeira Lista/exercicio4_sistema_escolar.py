@@ -91,7 +91,6 @@ class Secretaria():
             print(f'Presenças = {aluno.presencas}')
             print()
 
-
     def mostrar_professores(self):
         print('Relatório de professores:')
         s = ', '
