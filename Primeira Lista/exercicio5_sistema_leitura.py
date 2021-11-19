@@ -7,7 +7,7 @@
 A implementação dos métodos referentes a visualização na tela (display) podem ser
 substituídos por um comentário dentro do métodos, ex. “”” atualiza elementoX na tela “””'''
 
-class Usuário():
+class Usuario():
     def __init__(self, nome: str, senha: str):
         self.__nome = nome
         self.__senha = senha
@@ -92,7 +92,7 @@ class Sistema():
             print('Livro indisponível!')   
         print() 
 
-    def adicionar_usuario(self, usuario: Usuário):
+    def adicionar_usuario(self, usuario: Usuario):
         self.usuarios.append(usuario)
 
     def leitura_de_livro(self, usuario):
@@ -114,8 +114,8 @@ class Sistema():
                     print('Entrada inválida')
 
 def main():
-    usuario1 = Usuário('Mariana', '1234')
-    usuario2 = Usuário('Mariane', '4321')
+    usuario1 = Usuario('Mariana', '1234')
+    usuario2 = Usuario('Mariane', '4321')
 
     livro1 = Livro('Admirável mundo novo', 'Aldous Huxley', '1932', 'Biblioteca Azul')
     livro2 = Livro('Morte na Mesopotâmia', 'Agatha Christie', '1936', 'Arqueiro', '19')
